@@ -6,6 +6,9 @@ export class JhrootPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    let str
+
+    str = element(by.className('mdl-layout-title')).getText();
+    return str
   }
 }
